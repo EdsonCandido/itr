@@ -1,0 +1,36 @@
+{
+  "name": "list_itr",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Zuko",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "2.21.2",
+    "nodemon": "^2.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.13"
+  }
+}

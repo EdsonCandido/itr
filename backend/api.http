@@ -1,0 +1,6 @@
+#Test API
+GET http://localhost:3333/api/v1
+
+###
+#List all users
+GET http://localhost:3333/api/v1/list
